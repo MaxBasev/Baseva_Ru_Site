@@ -62,3 +62,34 @@
         animation-timing-function: ease-in;
     }
 }
+
+@media (max-width: 1199px) {
+    .post {
+        &__subtitle {
+            font-size: 26px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .post {
+        &__body {
+            padding-top: 60px;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .post {
+        &__body {
+            padding: 40px 0 100px 0;
+            font-size: 14px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+}
