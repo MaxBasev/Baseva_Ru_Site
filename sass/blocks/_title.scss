@@ -1,0 +1,142 @@
+.h1 {
+    text-align: center;
+    font-size: 66px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 26px;
+    color: $color-text-main;
+    text-align: center;
+    text-shadow: 1px 1px 5px white;
+    &-anketa {
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+    &-white {
+        color: white;
+        text-shadow: 1px 1px 1px black;
+    }
+}
+
+.h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(4, 34, 39, 0.4);
+    margin-bottom: 30px;
+    &-light {
+        color: rgba(196, 196, 196, 0.5);
+    }
+}
+
+.h4 {
+    font-size: 21px;
+    line-height: 1.35;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 0;
+    color: $color-text-sub;
+    text-align: center;
+    text-shadow: 0px 0px 5px white;
+    // text-shadow: 1px 1px 5px black;
+    margin-bottom: 80px;
+    &-light {
+        text-shadow: 0px 0px 5px black;
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
+.h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-bottom: 80px;
+    text-shadow: 0px 0px 5px white;
+    text-align: center;
+    &-left {
+        text-align: left;
+    }
+    &-white {
+        color: white;
+        text-shadow: none;
+    }
+}
+
+.h5 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1199px) {
+    .h1 {
+        font-size: 56px;
+        &-anketa {
+            font-size: 50px;
+            margin-bottom: 40px;
+        }
+    }
+    .h4 {
+        font-size: 18px;
+    }
+    .h2 {
+        font-size: 32px;
+        &-left {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .h1 {
+        font-size: 52px;
+    }
+    .h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .h2 {
+        font-size: 26px;
+        margin-bottom: 60px;
+        &-left {
+            margin-bottom: 38px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .h1 {
+        font-size: 40px;
+    }
+    .h3 {
+        font-size: 18px;
+        margin-bottom: 16px;
+    }
+    .h4 {
+        font-size: 15px;
+        margin-bottom: 40px;
+    }
+    .h2 {
+        margin-bottom: 40px;
+        &-left {
+            text-align: center;
+        }
+    }
+}
+
+@media ( max-width: 575px  ) {
+    .h1 {
+        font-size: 36px;
+    }
+    .h3 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .h2 {
+        font-size: 19px;
+    }
+    .h5 {
+        font-size: 18px;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+}

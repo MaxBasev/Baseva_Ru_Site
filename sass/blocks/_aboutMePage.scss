@@ -1,0 +1,25 @@
+.aboutPage {
+    &__cover {
+        padding: 180px 0 50px 0;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+    }
+    &__body {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: $color-text-main;
+        padding-top: 50px;
+        padding-bottom: 140px;
+        font-size: 18px;
+        font-weight: 300;
+        span {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 62px;
+        }
+    }
+    &__img {
+        width: 100%;
+    }
+    &__row {
+        margin-bottom: 100px;
+    }
+}

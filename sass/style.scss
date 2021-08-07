@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+		
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/menu';
+@import 'blocks/about';
+@import 'blocks/solutions';
+@import 'blocks/pricing';
+@import 'blocks/feedback';
+@import 'blocks/quote';
+@import 'blocks/cases';
+@import 'blocks/footer';
+@import 'blocks/title';
+@import 'blocks/forms';
+@import 'blocks/btn';
+
+@import 'blocks/anketa';
+@import 'blocks/aboutMePage';
+@import 'blocks/blog';
+@import 'blocks/post';
+
+* {
+		font-family: 'Montserrat', sans-serif;
+		// font-weight: 400;
+		margin: 0 ;
+		padding: 0 ;
+		box-sizing: border-box;
+}
+
+html {
+		-webkit-text-size-adjust: 100%;
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+
+body {
+		background-image: url(../img/sean-oulashin-KMn4VEeEPR8-unsplash.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		background-attachment: fixed;
+		background-blend-mode: overlay;
+		background-color: rgba(255, 255, 255, .4);
+}
+
+a {
+	color: #0d8aa0;
+	font-weight: 400;
+	&:hover {
+		color: #009fbb;
+		text-decoration: none;
+	}
+}
+
+button,
+input {
+	overflow: visible;
+}
+button,
+select {
+	text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+textarea {
+		overflow: auto;
+		resize: vertical;
+}
+
+.visible {
+	opacity: 1;
+	transition: opacity 5s;
+}
+
+.cover {
+    min-height: 100vh;
+    padding: 140px 0 140px 0;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 575px) {
+	.cover {
+		padding: 80px 0 80px 0;
+	}
+}
+
+
+
+
+
+
+
+ 
+

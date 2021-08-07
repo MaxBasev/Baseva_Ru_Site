@@ -1,0 +1,72 @@
+.btn {
+    // display: inline-block;
+	// display: block;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    background-color: $color-cyan;
+    border-color: $color-cyan;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    transition: background-color .5s, border-color .5s, box-shadow .5s, opacity 5s;
+    
+}
+.visible {
+    transition: opacity 5s;
+    opacity: 1;
+}
+
+@media ( max-width: 575px) {
+    .btn {
+        font-size: 16px;
+        height: 44px;
+        line-height: 42px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+  
+.btn:hover {
+    color: #fff;
+    background-color: $color-cyan-dark;
+    border-color: $color-cyan-dark;
+    box-shadow: 0 0 20px $color-cyan-dark;
+}
+  
+.btn:focus, .btn.focus {
+    color: #fff;
+    background-color: $color-cyan;
+    border-color: $color-cyan;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+  
+.btn.disabled, .btn:disabled {
+    color: #fff;
+    background-color: $color-cyan;
+    border-color: $color-cyan;
+    opacity: .3;
+}
+  
+.btn:not(:disabled):not(.disabled):active, .btn:not(:disabled):not(.disabled).active,
+.show > .btn.dropdown-toggle {
+    color: #fff;
+    background-color: $color-cyan-dark;
+    border-color: $color-cyan-dark;
+}
+  
+.btn:not(:disabled):not(.disabled):active:focus, .btn:not(:disabled):not(.disabled).active:focus,
+	.show > .btn.dropdown-toggle:focus {
+		box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .btn {
+      transition: none;
+    }
+}

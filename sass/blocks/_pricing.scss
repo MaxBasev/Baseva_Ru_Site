@@ -1,0 +1,78 @@
+.pricing {
+    @include container-light;
+    color: $color-text-main;
+
+    &__item {
+        display: grid;
+        grid-template-columns: 300px auto auto;
+        gap: 30px 30px;
+        justify-content: baseline;
+        &-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &-descr {
+            font-size: 16px;
+            line-height: 26px;
+        }
+        &-price {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .pricing {
+        &__item {
+            grid-template-columns: 260px auto auto;
+            &-title, &-price {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing {
+        &__item {
+            &-title, &-price {
+                font-size: 16px;
+            }
+            &-descr {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .pricing {
+        &__item {
+            grid-template-columns: 130px auto auto;
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .pricing {
+        &__item {
+            display: block;
+            &-price {
+                margin-bottom: 30px;
+                font-size: 20px;
+                color: $color-cyan;
+            }
+            &-descr {
+                font-size: 14px;
+                line-height: 20px;
+            }
+            &-title, &-descr {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

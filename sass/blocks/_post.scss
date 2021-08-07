@@ -1,0 +1,64 @@
+.post {
+    &__cover {
+        position: relative;
+        @include container-general;
+        min-height: 100vh;
+        padding: 140px 0 100px 0;
+        display: flex;
+        align-items: center;
+    }
+    &__body {
+        padding-bottom: 140px;
+        background-color: rgb(243, 243, 243);
+        color: $color-text-main;
+        padding-top: 80px;
+        border-top: 1px solid $color-text-main;
+        font-size: 16px;
+        font-weight: 300;
+        span {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 62px;
+        }
+    }
+    &__subtitle {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 1.25;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__img {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+.arrow {
+    text-align: center;
+    -moz-animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+    animation: bounce 1s infinite alternate;
+    &-wrapper {
+        height: 80px;
+        width: 100px;
+        font-size: 80px;
+        line-height: 80px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%) ;
+        color: white;
+        cursor: pointer;
+    }
+}
+  
+@keyframes bounce {
+    from {
+        transform: rotate(-90deg) translateX(-30px) translateY(-10%);
+        animation-timing-function: ease-out;
+    }
+    to {
+        transform: rotate(-90deg) translateX(0px) translateY(-10%);;
+        animation-timing-function: ease-in;
+    }
+}
