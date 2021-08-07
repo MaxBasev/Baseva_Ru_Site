@@ -31,4 +31,12 @@
 }
 
 @media (max-width: 575px) {
+    .anketa {
+        &__cover {
+            padding-top: 100px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
 }

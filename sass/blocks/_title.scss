@@ -109,6 +109,9 @@
 @media (max-width: 767px) {
     .h1 {
         font-size: 40px;
+        &-anketa {
+            font-size: 36px;
+        }
     }
     .h3 {
         font-size: 18px;
@@ -129,6 +132,10 @@
 @media ( max-width: 575px  ) {
     .h1 {
         font-size: 36px;
+        &-anketa {
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
     }
     .h3 {
         font-size: 15px;
