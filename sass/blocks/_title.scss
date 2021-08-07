@@ -104,6 +104,11 @@
             margin-bottom: 38px;
         }
     }
+    .h4 {
+        &-aboutPage {
+            margin-bottom: 0px;
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -120,6 +125,9 @@
     .h4 {
         font-size: 15px;
         margin-bottom: 40px;
+        &-aboutPage {
+            margin-bottom: 0px;
+        }
     }
     .h2 {
         margin-bottom: 40px;
@@ -136,10 +144,19 @@
             font-size: 20px;
             margin-bottom: 0px;
         }
+        &-aboutPage {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
     }
     .h3 {
         font-size: 15px;
         margin-bottom: 10px;
+    }
+    .h4 {
+        &-aboutPage {
+            font-size: 14px;
+        }
     }
     .h2 {
         font-size: 19px;
