@@ -37,32 +37,112 @@
         background-size: cover;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
-        transition: .5s all;
+        -moz-transition: height .5s, margin .5s;
+        -webkit-transition: height .5s, margin .5s;
+        transition: height .5s, margin .5s;
+
         &-img {
             width: 100%;
         }
         &-title {
             color: white;
+            font-size: 18px;
             font-weight: 600;
             background-color: rgba(0, 0, 0, 0.4);
             padding: 10px 20px 10px 20px;
-            transition: .5s all;
+            -moz-transition: height .5s, margin .5s;
+            -webkit-transition: height .5s, margin .5s;
+            transition: height .5s, margin .5s;
         }
         &-descr {
             color: white;
+            font-size: 16px;
             background-color: rgba(0, 0, 0, 0.4);
             padding: 0px 20px 30px 20px;
             height: 0;
             margin-bottom: -30px;
 
-            transition: .5s all;
+            -moz-transition: height .5s, margin .5s;
+            -webkit-transition: height .5s, margin .5s;
+            transition: height .5s, margin .5s;
         }
         &:hover {
             box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.4);
+
+            -moz-transition: height .5s, margin .5s;
+            -webkit-transition: height .5s, margin .5s;
+            transition: height .5s, margin .5s;
+
             .blog__item-descr {
                 height: auto;
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .blog {
+        &__cover {
+            padding-bottom: 50px;
+        }
+        &__body {
+            padding-top: 30px;
+        }
+        &__item {
+            height: 300px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .blog {
+        &__cover {
+            padding-bottom: 30px;
+        }
+        &__item {
+            height: 260px;
+            &-title {
+                font-size: 15px;
+            }
+            &-descr {
+                font-size: 14px;
+                padding: 0px 20px 10px 20px;
+                margin-bottom: -10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog {
+        &__list {
+            display: block;
+        }
+        &__item {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            &-descr {
+                height: auto;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .blog {
+        &__cover {
+            padding-top: 100px;
+        }
+        &__body {
+            padding-bottom: 100px;
+        }
+        &__item {
+            // width: calc(100% - 30px)
+            width: 100%;
         }
     }
 }
