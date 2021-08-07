@@ -1,4 +1,5 @@
 .menu {
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
     width: 100%;
     position: fixed;
@@ -62,6 +63,9 @@
             margin-left: 10px;
         }
     }
+    &__hamburger {
+        display: none;
+    }
 }
 .active {
     &::before {
@@ -77,4 +81,43 @@
 .scroll {
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767px) {
+    .menu {
+        &__logo {
+            margin-right: 20px;
+        }
+        &__item {
+            font-size: 14px;
+            margin-right: 20px;
+        }
+        &__social {
+            display: none;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .menu {
+        display: none;
+
+        // flex-direction: column;        
+    }
+    .hamburger {
+        position: fixed;
+        z-index: 9;
+        top: 0px;
+        right: 0px;
+        padding: 14px;
+        span {
+            display: block;
+            height: 5px;
+            border-radius: 3px;
+            width: 30px;
+            margin: 4px 0 4px 0;
+            background-color: $color-cyan-dark;
+            box-shadow: 4px 2px 0 #fff;
+
+        }
+    }
 }
