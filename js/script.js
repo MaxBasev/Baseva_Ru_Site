@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let inputPhone = document.getElementById('user-phone'),
         inputPhoneLength = 0,
-        menu = document.getElementById('menu'),
         mainForm = document.getElementById('main-form');
     
     setTimeout(() => {
@@ -86,15 +85,6 @@ document.addEventListener('DOMContentLoaded', function() {
             inputPhoneLength = this.value.length;
         }
 
-    });
-
-
-    document.addEventListener('scroll', function() {
-        if (document.documentElement.scrollTop >= 60) {
-            menu.classList.add('scroll');
-        } else {
-            menu.classList.remove('scroll');
-        }
     });
 
 });
