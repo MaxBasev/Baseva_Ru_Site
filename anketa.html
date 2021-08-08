@@ -92,85 +92,72 @@
                         каких объемах я могу вам предложить или (если я пойму, что консультация будет напрасной тратой
                         времени и ваших финансов) - обосновать мой отказ в консультировании.</div>
                     <form name="anketa" method="POST" data-netlify="true" action="/success.html">
-                        <div class="form-wrapper">
-                            <div class="form-group">
-                                <label for="name">Ваше имя</label>
-                                <input type="text" class="form-control" id="name" placeholder="Как вас зовут?" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="vk">Ваш профиль в ВКонтакте</label>
-                                <input type="text" class="form-control" id="vk"
-                                    placeholder="Ссылка на ваш профиль в ВКонтакте" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="skype">Ваш Скайп</label>
-                                <input type="text" class="form-control" id="skype"
-                                    placeholder="Ссылка на ваш профиль в Skype" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="diagnosis">Опишите, пожалуйста, подробно, диагноз (или симптом), который вы
-                                    хотите обсудить на консультации (время начала заболевания, происходившие ухудшения
-                                    или
-                                    улучшения самочувствия, есть ли сопутствующие заболевания)</label>
-                                <textarea class="form-control" id="diagnosis" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="treatment">Расскажите, пожалуйста, как проходило лечение вашего заболевания
-                                    (если оно проводилось вообще); было ли лечение традиционным или вы прибегали к
-                                    помощи
-                                    нетрадиционной медицины, в какие медучреждения обращались. Каких результатов вам
-                                    удалось
-                                    достичь в лечении?</label>
-                                <textarea class="form-control" id="treatment" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="personal-life">И еще мне было бы важно узнать немного о вашей жизни -
-                                    учитесь
-                                    вы, работаете или уже вышли на пенсию; есть ли у вас семья и дети.</label>
-                                <textarea class="form-control" id="personal-life" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="pension">Если вы принадлежите к представителям старшего поколения, не могли
-                                    бы
-                                    вы немного рассказать поподробнее о том, чем вы занимаетесь, выйдя на пенсию: есть
-                                    ли у
-                                    вас хобби, как проводите время? И не случалось ли у вас такого, что ваше заболевание
-                                    при
-                                    переходе к определенному возрасту врачи стали считать "возрастными изменениями"? И
-                                    какое
-                                    это было заболевание?</label>
-                                <textarea class="form-control" id="pension" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="psychologist">Есть ли у вас опыт работы с психологами или психотерапевтами
-                                    по
-                                    вопросам, связанным с вашим заболеванием? Если есть - опишите, пожалуйста,
-                                    результаты
-                                    этих встреч/консультаций.</label>
-                                <textarea class="form-control" id="psychologist" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="decision">Объясните, пожалуйста, почему вы решили пойти на консультацию
-                                    именно
-                                    ко мне и где вы обо мне узнали?</label>
-                                <textarea class="form-control" id="decision" rows="3"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="town">Ваш город</label>
-                                <input type="text" class="form-control" id="town" placeholder="Ваш город" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="time">Удобное для вас время консультации (просьба указывать время по
-                                    Москве)</label>
-                                <input type="text" class="form-control" id="time" placeholder="ЧЧ:ММ"
-                                    pattern="\d{2}\:\d{2}" data-mask="10:00" required>
-                            </div>
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" id="user-check" required>
-                                <label class="form-check-label" for="user-check">Нажимая на кнопку, вы даете согласие на
-                                    <a href="#">обработку персональных данных и соглашаетесь c политикой
-                                        конфиденциальности</a></label>
-                            </div>
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" placeholder="Как вас зовут?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vk">Ваш профиль в ВКонтакте</label>
+                            <input type="text" class="form-control" id="vk"
+                                placeholder="Ссылка на ваш профиль в ВКонтакте" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="skype">Ваш Скайп</label>
+                            <input type="text" class="form-control" id="skype"
+                                placeholder="Ссылка на ваш профиль в Skype" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="diagnosis">Опишите, пожалуйста, подробно, диагноз (или симптом), который вы
+                                хотите обсудить на консультации (время начала заболевания, происходившие ухудшения или
+                                улучшения самочувствия, есть ли сопутствующие заболевания)</label>
+                            <textarea class="form-control" id="diagnosis" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="treatment">Расскажите, пожалуйста, как проходило лечение вашего заболевания
+                                (если оно проводилось вообще); было ли лечение традиционным или вы прибегали к помощи
+                                нетрадиционной медицины, в какие медучреждения обращались. Каких результатов вам удалось
+                                достичь в лечении?</label>
+                            <textarea class="form-control" id="treatment" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="personal-life">И еще мне было бы важно узнать немного о вашей жизни - учитесь
+                                вы, работаете или уже вышли на пенсию; есть ли у вас семья и дети.</label>
+                            <textarea class="form-control" id="personal-life" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pension">Если вы принадлежите к представителям старшего поколения, не могли бы
+                                вы немного рассказать поподробнее о том, чем вы занимаетесь, выйдя на пенсию: есть ли у
+                                вас хобби, как проводите время? И не случалось ли у вас такого, что ваше заболевание при
+                                переходе к определенному возрасту врачи стали считать "возрастными изменениями"? И какое
+                                это было заболевание?</label>
+                            <textarea class="form-control" id="pension" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="psychologist">Есть ли у вас опыт работы с психологами или психотерапевтами по
+                                вопросам, связанным с вашим заболеванием? Если есть - опишите, пожалуйста, результаты
+                                этих встреч/консультаций.</label>
+                            <textarea class="form-control" id="psychologist" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="decision">Объясните, пожалуйста, почему вы решили пойти на консультацию именно
+                                ко мне и где вы обо мне узнали?</label>
+                            <textarea class="form-control" id="decision" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="town">Ваш город</label>
+                            <input type="text" class="form-control" id="town" placeholder="Ваш город" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Удобное для вас время консультации (просьба указывать время по
+                                Москве)</label>
+                            <input type="text" class="form-control" id="time" placeholder="ЧЧ:ММ" pattern="\d{2}\:\d{2}"
+                                data-mask="10:00" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="user-check" required>
+                            <label class="form-check-label" for="user-check">Нажимая на кнопку, вы даете согласие на <a
+                                    href="#">обработку персональных данных и соглашаетесь c политикой
+                                    конфиденциальности</a></label>
                         </div>
                         <button type="submit" class="btn form-btn" id="anketa-btn">Отправить</button>
                     </form>
