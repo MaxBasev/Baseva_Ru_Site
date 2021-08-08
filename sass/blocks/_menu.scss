@@ -91,20 +91,6 @@
 
 @media (max-width: 767px) {
     .menu {
-        &__logo {
-            margin-right: 20px;
-        }
-        &__item {
-            font-size: 14px;
-            margin-right: 20px;
-        }
-        &__social {
-            display: none;
-        }
-    }
-}
-@media (max-width: 575px) {
-    .menu {
         position: fixed;
         right: 100%;
         top: 0;
@@ -128,6 +114,7 @@
         }
         &__item {
             margin: 10px 20px 10px 20px;
+            font-size: 15px;
         }
         &__social {
             display: flex;
