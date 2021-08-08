@@ -91,7 +91,8 @@
                         <div class="form-subtitle">Также перед консультацией пожалуйста <a href="#">заполните
                                 анкету</a>.
                         </div>
-                        <form name="contact" method="POST" data-netlify="true" action="/success.html">
+                        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true"
+                            action="/success.html">
                             <div class="form-wrapper">
                                 <label for="user-name">Как вас зовут?</label>
                                 <input type="text" class="form-control" id="user-name" name="uname" required
@@ -109,6 +110,7 @@
                                         <a href="#">политикой конфиденциальности</a></label>
                                 </div>
                             </div>
+                            <div data-netlify-recaptcha="true"></div>
                             <button type="submit" class="btn form-btn" id="main-btn">Отправить</button>
                         </form>
                     </div>
